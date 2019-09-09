@@ -1,7 +1,11 @@
 public class Test2 {
     public static void main(String[] args){
-        int n = 1;
-        int m = 2;
-        System.out.println((double)n/(double)m);
+        String title = "자료구조";
+        int year = 2017;
+        double time = 2.5;
+        boolean doubingYN = true;
+        char langugage = '한';
+
+        System.out.println(title + ", " +year + ", " + time + ", " + doubingYN + ", " +langugage);
     }
 }

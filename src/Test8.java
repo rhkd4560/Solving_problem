@@ -1,14 +1,6 @@
-
 public class Test8 {
     public static void main(String[] args){
-        int[] n = {77,88,99};
-        String v = "";
-        for(int i = 0; i < n.length; i++){
-            v = v + n[i];
-            if(i < n.length-1){
-                v = v + ", ";
-            }
-        }
-        System.out.println("[" + v + "]");
+        long n = 20000000000L;
+        System.out.println(n);
     }
 }
