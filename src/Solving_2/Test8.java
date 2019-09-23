@@ -8,7 +8,7 @@ public class Test8 {
         for(int i = 1; i <= 100; i++){
             list.add(i);
         }
-        list.remove(2);
+        list.remove(3);
         System.out.println(list);
     }
 }
