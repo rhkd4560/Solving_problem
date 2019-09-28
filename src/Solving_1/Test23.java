@@ -9,8 +9,9 @@ public class Test23 {
         int []num = new int[N];
         int max = 0;
         int secondmax = 0;
+        int count = 0;
         Random random = new Random();
-        for (int i = 0; i < N; i++){
+        for (int i = 0; i < num.length; i++){
             num[i] = random.nextInt(10);
         }
         for (int i = 0; i < num.length; i ++){
@@ -19,8 +20,17 @@ public class Test23 {
             }
         }
         for (int i = 0; i < num.length; i++){
-            if(secondmax < num[i] && num[i] < max){
-                secondmax = num[i];
+            if(max == num[i]) count++;
+        }
+        for(int i = 0; i < num.length; i++){
+            if(count == 1){
+                if(secondmax < num[i] && num[i] < max){
+                    secondmax = num[i];
+                }
+            } else {
+                if(secondmax < num[i] && num[i] <= max){
+                    secondmax = num[i];
+                }
             }
         }
         System.out.println(Arrays.toString(num));

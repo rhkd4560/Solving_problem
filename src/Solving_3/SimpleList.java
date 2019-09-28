@@ -15,15 +15,14 @@ public class SimpleList {
         }
     }
     public void addLast(int data){
-        Node newNode = new Node(data);
-        if(head != null){
-            Node p = head;
-            while (p.next != null){
-                p = p.next;
-            }
-            p.next = newNode;
+        if(head==null){
+            addFirst(data);
+        } else{
+            Node newNode = new Node(data);
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
         }
-        else head = newNode;
         size++;
     }
     public void removeFirst(){
