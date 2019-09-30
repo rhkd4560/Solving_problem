@@ -13,7 +13,7 @@ public class Test26 {
         }
         Arrays.sort(num);
         System.out.println(Arrays.toString(num));
-        for(int i = 1; i < num.length; i++){
+        /*for(int i = 1; i < num.length; i++){
             if(num[i-1] == num[i]){
                 num[i-1] = -1;
             }
@@ -22,6 +22,10 @@ public class Test26 {
             if(num[i] != -1){
                 System.out.print(num[i] + " ");
             }
+        }*/
+        System.out.print(num[0] + " ");
+        for(int i = 1; i < num.length; i++){
+            if(num[i-1]!= num[i]) System.out.print(num[i] + " ");
         }
     }
 }

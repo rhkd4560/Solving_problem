@@ -2,7 +2,7 @@ package Solving_3;
 
 public class Test16 {
     public static void main(String[] args){
-        SimpleList list=new SimpleList();
+        DoubleList list=new DoubleList();
         list.addFirst(1);
         list.addFirst(2);
         list.addLast(9);
