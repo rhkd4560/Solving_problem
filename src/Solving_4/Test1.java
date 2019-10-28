@@ -22,4 +22,5 @@ public class Test1 {
         System.out.println("스택 top 위치 자료 제거="+stack.pop());
         System.out.println("스택 전체 내용: "+stack);
         System.out.println("스택이 비어 있는가? "+stack.isEmpty());
-    }}
+    }
+}

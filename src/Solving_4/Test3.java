@@ -12,6 +12,5 @@ public class Test3 {
         for(int i = 0 ; i < s.length();i ++){
             System.out.print(stack.pop());
         }
-
     }
 }
